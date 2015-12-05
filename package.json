@@ -1,0 +1,19 @@
+{
+  "name": "playground",
+  "version": "1.0.0",
+  "description": "While discovering a whole new tool, it's quite mandatory to follow the advised tutorials. This repository will thus contain my personal exercices based on [Elasticsearch: the Definitive Guide](https://github.com/grebett/learning-elasticsearch.git) tutorial.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grebett/learning-elasticsearch.git"
+  },
+  "author": "grebett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grebett/learning-elasticsearch/issues"
+  },
+  "homepage": "https://github.com/grebett/learning-elasticsearch#readme"
+}
