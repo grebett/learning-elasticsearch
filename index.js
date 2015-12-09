@@ -9,12 +9,11 @@ let client = new elasticsearch.Client({
   log: 'trace' // this logger prints directly to stdout very useful infos – for more infos, see: https://www.elastic.co/guide/en/elasticsearch/client/javascript-api/current/logging.html
 });
 
-// https://www.elastic.co/guide/en/elasticsearch/client/javascript-api/current/api-reference.html#api-get
+// https://www.elastic.co/guide/en/elasticsearch/client/javascript-api/current/api-reference.html#api-delete
 
-client.get({
+client.delete({
   index: 'megacorp',
   type: 'employee',
-  // fields: ['first_name', 'last_name'],
   id: 1 // mandatory
 }, (error, response) => {
   if (error) {
