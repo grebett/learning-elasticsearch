@@ -16,8 +16,17 @@ client.search({
   index: 'megacorp',
   body: {
     query: {
-      match: {
-        'first_name': 'Rosalyn'
+      filtered: {
+        filter: {
+          range: {
+            age: { gt: 30, lt: 42 }
+          }
+        },
+        query: {
+          match: {
+            gender: 'female'
+          }
+        }
       }
     }
   }

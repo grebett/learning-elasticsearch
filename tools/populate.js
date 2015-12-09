@@ -1,5 +1,8 @@
 'use strict';
 let chalk = require('chalk');
+let Event = require('events').EventEmitter;
+let test = new Event();
+
 
 function deleteIndexSafe (client, index) {
   return new Promise((resolve, reject) => {

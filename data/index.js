@@ -1,486 +1,523 @@
-'use strict'
-
-let data = [
+module.exports = [
   {
-    "first_name": "Joyce",
-    "last_name": "Horton",
+    "first_name": "Rodgers",
+    "last_name": "Logan",
+    "age": 39,
     "gender": "male",
-    "registered": "2015-05-31T11:07:59 -02:00",
+    "registered": "2015-09-13T05:11:47 -02:00",
     "tags": [
-      "deserunt",
-      "veniam",
-      "adipisicing"
-    ],
-    "favoriteFruit": "banana"
-  },
-  {
-    "first_name": "Beach",
-    "last_name": "Powell",
-    "gender": "male",
-    "registered": "2015-09-25T11:36:12 -02:00",
-    "tags": [
-      "duis",
-      "sunt",
-      "pariatur"
-    ],
-    "favoriteFruit": "banana"
-  },
-  {
-    "first_name": "Baird",
-    "last_name": "Pearson",
-    "gender": "male",
-    "registered": "2015-04-16T05:21:43 -02:00",
-    "tags": [
-      "anim",
-      "ad",
-      "incididunt"
-    ],
-    "favoriteFruit": "banana"
-  },
-  {
-    "first_name": "English",
-    "last_name": "Davis",
-    "gender": "male",
-    "registered": "2015-06-12T01:14:56 -02:00",
-    "tags": [
-      "consequat",
-      "sint",
+      "laboris",
+      "consectetur",
       "laborum"
     ],
-    "favoriteFruit": "apple"
-  },
-  {
-    "first_name": "Summer",
-    "last_name": "Sawyer",
-    "gender": "female",
-    "registered": "2015-08-06T04:20:05 -02:00",
-    "tags": [
-      "qui",
-      "pariatur",
-      "dolor"
-    ],
     "favoriteFruit": "banana"
   },
   {
-    "first_name": "Benson",
-    "last_name": "Frye",
+    "first_name": "Castro",
+    "last_name": "Ruiz",
+    "age": 29,
     "gender": "male",
-    "registered": "2015-07-12T11:42:19 -02:00",
+    "registered": "2015-08-09T05:50:14 -02:00",
     "tags": [
-      "dolore",
-      "proident",
-      "excepteur"
-    ],
-    "favoriteFruit": "strawberry"
-  },
-  {
-    "first_name": "Fernandez",
-    "last_name": "Kline",
-    "gender": "male",
-    "registered": "2015-07-03T06:17:40 -02:00",
-    "tags": [
-      "dolor",
-      "et",
-      "pariatur"
-    ],
-    "favoriteFruit": "apple"
-  },
-  {
-    "first_name": "Jacquelyn",
-    "last_name": "Nixon",
-    "gender": "female",
-    "registered": "2015-05-07T09:00:12 -02:00",
-    "tags": [
-      "id",
-      "ut",
-      "aliquip"
-    ],
-    "favoriteFruit": "banana"
-  },
-  {
-    "first_name": "Dorothea",
-    "last_name": "Nolan",
-    "gender": "female",
-    "registered": "2015-11-13T11:45:35 -01:00",
-    "tags": [
-      "ipsum",
-      "mollit",
-      "nisi"
-    ],
-    "favoriteFruit": "strawberry"
-  },
-  {
-    "first_name": "Price",
-    "last_name": "Mayo",
-    "gender": "male",
-    "registered": "2015-08-02T05:12:23 -02:00",
-    "tags": [
-      "esse",
-      "qui",
-      "irure"
-    ],
-    "favoriteFruit": "strawberry"
-  },
-  {
-    "first_name": "Lula",
-    "last_name": "Compton",
-    "gender": "female",
-    "registered": "2015-05-30T05:35:51 -02:00",
-    "tags": [
-      "laboris",
-      "minim",
-      "Lorem"
-    ],
-    "favoriteFruit": "apple"
-  },
-  {
-    "first_name": "Farmer",
-    "last_name": "Whitfield",
-    "gender": "male",
-    "registered": "2015-04-17T05:37:48 -02:00",
-    "tags": [
-      "ipsum",
-      "laboris",
-      "non"
-    ],
-    "favoriteFruit": "apple"
-  },
-  {
-    "first_name": "Goodman",
-    "last_name": "Montoya",
-    "gender": "male",
-    "registered": "2015-01-22T02:15:23 -01:00",
-    "tags": [
-      "eiusmod",
-      "pariatur",
-      "cupidatat"
-    ],
-    "favoriteFruit": "banana"
-  },
-  {
-    "first_name": "Rosalyn",
-    "last_name": "Blevins",
-    "gender": "female",
-    "registered": "2015-04-20T05:26:30 -02:00",
-    "tags": [
-      "nisi",
-      "laborum",
-      "dolor"
-    ],
-    "favoriteFruit": "strawberry"
-  },
-  {
-    "first_name": "Key",
-    "last_name": "Brooks",
-    "gender": "male",
-    "registered": "2015-08-18T06:52:57 -02:00",
-    "tags": [
-      "occaecat",
-      "laborum",
-      "proident"
-    ],
-    "favoriteFruit": "apple"
-  },
-  {
-    "first_name": "Alyson",
-    "last_name": "Lee",
-    "gender": "female",
-    "registered": "2015-07-25T09:52:08 -02:00",
-    "tags": [
-      "dolore",
-      "cupidatat",
-      "veniam"
-    ],
-    "favoriteFruit": "banana"
-  },
-  {
-    "first_name": "Thelma",
-    "last_name": "Briggs",
-    "gender": "female",
-    "registered": "2015-03-20T04:15:43 -01:00",
-    "tags": [
-      "minim",
-      "sunt",
+      "magna",
+      "adipisicing",
       "culpa"
     ],
-    "favoriteFruit": "strawberry"
+    "favoriteFruit": "apple"
   },
   {
-    "first_name": "Baldwin",
-    "last_name": "Conrad",
+    "first_name": "Byers",
+    "last_name": "Haynes",
+    "age": 43,
     "gender": "male",
-    "registered": "2015-06-03T04:08:29 -02:00",
+    "registered": "2015-10-26T06:35:01 -01:00",
     "tags": [
-      "aute",
-      "officia",
-      "minim"
+      "eiusmod",
+      "reprehenderit",
+      "ut"
     ],
     "favoriteFruit": "banana"
   },
   {
-    "first_name": "Strong",
-    "last_name": "Mckenzie",
-    "gender": "male",
-    "registered": "2015-07-27T11:34:25 -02:00",
+    "first_name": "Maribel",
+    "last_name": "Castillo",
+    "age": 33,
+    "gender": "female",
+    "registered": "2015-03-22T06:52:01 -01:00",
     "tags": [
       "cupidatat",
-      "exercitation",
-      "nostrud"
+      "sunt",
+      "quis"
     ],
     "favoriteFruit": "strawberry"
   },
   {
-    "first_name": "Romero",
-    "last_name": "Church",
+    "first_name": "Byrd",
+    "last_name": "Cervantes",
+    "age": 40,
     "gender": "male",
-    "registered": "2015-11-14T11:31:24 -01:00",
+    "registered": "2015-02-25T03:08:06 -01:00",
     "tags": [
-      "laboris",
-      "aute",
-      "duis"
+      "tempor",
+      "amet",
+      "esse"
     ],
     "favoriteFruit": "strawberry"
   },
   {
-    "first_name": "Mandy",
-    "last_name": "Park",
+    "first_name": "Gilda",
+    "last_name": "Dominguez",
+    "age": 34,
     "gender": "female",
-    "registered": "2015-05-08T04:50:55 -02:00",
+    "registered": "2015-04-15T07:02:45 -02:00",
     "tags": [
-      "veniam",
-      "cillum",
-      "elit"
-    ],
-    "favoriteFruit": "strawberry"
-  },
-  {
-    "first_name": "Hickman",
-    "last_name": "Tate",
-    "gender": "male",
-    "registered": "2015-06-16T02:18:25 -02:00",
-    "tags": [
-      "quis",
-      "consequat",
-      "excepteur"
+      "est",
+      "proident",
+      "eiusmod"
     ],
     "favoriteFruit": "banana"
   },
   {
-    "first_name": "Audra",
-    "last_name": "Bailey",
+    "first_name": "Lilian",
+    "last_name": "Page",
+    "age": 40,
     "gender": "female",
-    "registered": "2015-11-15T10:05:01 -01:00",
+    "registered": "2015-08-26T04:03:24 -02:00",
     "tags": [
-      "anim",
-      "deserunt",
-      "cillum"
-    ],
-    "favoriteFruit": "apple"
-  },
-  {
-    "first_name": "Jacobson",
-    "last_name": "Wilson",
-    "gender": "male",
-    "registered": "2015-01-15T08:25:34 -01:00",
-    "tags": [
-      "excepteur",
-      "irure",
-      "commodo"
-    ],
-    "favoriteFruit": "strawberry"
-  },
-  {
-    "first_name": "Lillie",
-    "last_name": "Elliott",
-    "gender": "female",
-    "registered": "2015-05-26T07:42:53 -02:00",
-    "tags": [
-      "pariatur",
-      "do",
-      "incididunt"
-    ],
-    "favoriteFruit": "apple"
-  },
-  {
-    "first_name": "Lucille",
-    "last_name": "Hughes",
-    "gender": "female",
-    "registered": "2015-07-29T11:27:33 -02:00",
-    "tags": [
-      "duis",
-      "proident",
-      "minim"
-    ],
-    "favoriteFruit": "apple"
-  },
-  {
-    "first_name": "Stein",
-    "last_name": "Barlow",
-    "gender": "male",
-    "registered": "2015-01-31T02:22:18 -01:00",
-    "tags": [
-      "fugiat",
-      "sint",
-      "officia"
-    ],
-    "favoriteFruit": "strawberry"
-  },
-  {
-    "first_name": "Daugherty",
-    "last_name": "Crane",
-    "gender": "male",
-    "registered": "2015-05-10T09:17:18 -02:00",
-    "tags": [
-      "commodo",
-      "deserunt",
-      "mollit"
-    ],
-    "favoriteFruit": "strawberry"
-  },
-  {
-    "first_name": "Stacey",
-    "last_name": "Berger",
-    "gender": "female",
-    "registered": "2015-01-16T12:14:18 -01:00",
-    "tags": [
-      "voluptate",
-      "amet",
-      "Lorem"
-    ],
-    "favoriteFruit": "strawberry"
-  },
-  {
-    "first_name": "Powell",
-    "last_name": "Weeks",
-    "gender": "male",
-    "registered": "2015-05-07T09:27:09 -02:00",
-    "tags": [
-      "duis",
-      "est",
-      "non"
-    ],
-    "favoriteFruit": "strawberry"
-  },
-  {
-    "first_name": "Rhea",
-    "last_name": "Hansen",
-    "gender": "female",
-    "registered": "2015-03-31T07:46:10 -02:00",
-    "tags": [
-      "id",
-      "adipisicing",
-      "irure"
-    ],
-    "favoriteFruit": "apple"
-  },
-  {
-    "first_name": "Brandy",
-    "last_name": "Crawford",
-    "gender": "female",
-    "registered": "2015-07-06T08:56:01 -02:00",
-    "tags": [
-      "quis",
-      "eiusmod",
+      "nostrud",
+      "occaecat",
       "consectetur"
     ],
-    "favoriteFruit": "strawberry"
+    "favoriteFruit": "banana"
   },
   {
-    "first_name": "Whitfield",
-    "last_name": "Wilkerson",
+    "first_name": "Hood",
+    "last_name": "Sheppard",
+    "age": 25,
     "gender": "male",
-    "registered": "2015-10-11T03:38:36 -02:00",
+    "registered": "2015-03-11T06:21:41 -01:00",
     "tags": [
-      "cupidatat",
-      "non",
+      "sunt",
+      "ea",
+      "proident"
+    ],
+    "favoriteFruit": "banana"
+  },
+  {
+    "first_name": "Debra",
+    "last_name": "Alston",
+    "age": 22,
+    "gender": "female",
+    "registered": "2015-10-07T03:33:38 -02:00",
+    "tags": [
+      "labore",
+      "esse",
       "esse"
     ],
     "favoriteFruit": "banana"
   },
   {
-    "first_name": "Helen",
-    "last_name": "Baird",
+    "first_name": "Summer",
+    "last_name": "Haney",
+    "age": 43,
     "gender": "female",
-    "registered": "2015-10-08T06:59:25 -02:00",
+    "registered": "2015-01-04T05:15:11 -01:00",
     "tags": [
-      "eiusmod",
-      "magna",
-      "enim"
+      "esse",
+      "officia",
+      "nostrud"
     ],
-    "favoriteFruit": "banana"
+    "favoriteFruit": "strawberry"
   },
   {
-    "first_name": "Rowe",
-    "last_name": "Gilmore",
+    "first_name": "Ashlee",
+    "last_name": "Johnston",
+    "age": 34,
+    "gender": "female",
+    "registered": "2015-02-21T02:14:03 -01:00",
+    "tags": [
+      "enim",
+      "non",
+      "sint"
+    ],
+    "favoriteFruit": "strawberry"
+  },
+  {
+    "first_name": "Priscilla",
+    "last_name": "Gray",
+    "age": 43,
+    "gender": "female",
+    "registered": "2015-09-13T02:25:48 -02:00",
+    "tags": [
+      "irure",
+      "commodo",
+      "minim"
+    ],
+    "favoriteFruit": "strawberry"
+  },
+  {
+    "first_name": "Gina",
+    "last_name": "Stout",
+    "age": 50,
+    "gender": "female",
+    "registered": "2015-08-29T06:04:35 -02:00",
+    "tags": [
+      "qui",
+      "nisi",
+      "mollit"
+    ],
+    "favoriteFruit": "strawberry"
+  },
+  {
+    "first_name": "Malinda",
+    "last_name": "Gaines",
+    "age": 52,
+    "gender": "female",
+    "registered": "2015-06-10T09:36:30 -02:00",
+    "tags": [
+      "consectetur",
+      "elit",
+      "consectetur"
+    ],
+    "favoriteFruit": "strawberry"
+  },
+  {
+    "first_name": "Mclaughlin",
+    "last_name": "Spencer",
+    "age": 38,
     "gender": "male",
-    "registered": "2015-05-06T02:42:28 -02:00",
+    "registered": "2015-02-04T02:32:13 -01:00",
     "tags": [
-      "reprehenderit",
-      "tempor",
-      "pariatur"
+      "aliquip",
+      "aute",
+      "tempor"
+    ],
+    "favoriteFruit": "strawberry"
+  },
+  {
+    "first_name": "Christina",
+    "last_name": "Chandler",
+    "age": 45,
+    "gender": "female",
+    "registered": "2015-08-11T04:07:38 -02:00",
+    "tags": [
+      "dolor",
+      "laboris",
+      "non"
     ],
     "favoriteFruit": "banana"
   },
   {
-    "first_name": "Margret",
-    "last_name": "Leach",
+    "first_name": "Kim",
+    "last_name": "Huber",
+    "age": 52,
     "gender": "female",
-    "registered": "2015-02-12T01:54:02 -01:00",
+    "registered": "2015-08-03T12:30:28 -02:00",
     "tags": [
-      "nulla",
-      "occaecat",
-      "voluptate"
+      "mollit",
+      "officia",
+      "eu"
+    ],
+    "favoriteFruit": "banana"
+  },
+  {
+    "first_name": "Serena",
+    "last_name": "Espinoza",
+    "age": 20,
+    "gender": "female",
+    "registered": "2015-03-09T01:30:55 -01:00",
+    "tags": [
+      "tempor",
+      "pariatur",
+      "Lorem"
+    ],
+    "favoriteFruit": "strawberry"
+  },
+  {
+    "first_name": "Rasmussen",
+    "last_name": "Clay",
+    "age": 51,
+    "gender": "male",
+    "registered": "2015-01-06T10:28:21 -01:00",
+    "tags": [
+      "pariatur",
+      "nostrud",
+      "elit"
     ],
     "favoriteFruit": "apple"
   },
   {
-    "first_name": "Julia",
-    "last_name": "Stanley",
-    "gender": "female",
-    "registered": "2015-10-24T01:48:59 -02:00",
+    "first_name": "Wong",
+    "last_name": "Blanchard",
+    "age": 28,
+    "gender": "male",
+    "registered": "2015-08-02T06:36:48 -02:00",
     "tags": [
-      "adipisicing",
-      "dolor",
+      "consequat",
+      "pariatur",
+      "exercitation"
+    ],
+    "favoriteFruit": "apple"
+  },
+  {
+    "first_name": "Molly",
+    "last_name": "Martin",
+    "age": 24,
+    "gender": "female",
+    "registered": "2015-01-02T11:52:34 -01:00",
+    "tags": [
+      "exercitation",
+      "minim",
+      "consectetur"
+    ],
+    "favoriteFruit": "strawberry"
+  },
+  {
+    "first_name": "Christy",
+    "last_name": "Melendez",
+    "age": 45,
+    "gender": "female",
+    "registered": "2015-05-06T07:30:41 -02:00",
+    "tags": [
+      "excepteur",
+      "officia",
+      "consequat"
+    ],
+    "favoriteFruit": "strawberry"
+  },
+  {
+    "first_name": "Charlotte",
+    "last_name": "Carver",
+    "age": 20,
+    "gender": "female",
+    "registered": "2015-09-19T12:43:37 -02:00",
+    "tags": [
+      "cillum",
+      "deserunt",
+      "enim"
+    ],
+    "favoriteFruit": "strawberry"
+  },
+  {
+    "first_name": "Peggy",
+    "last_name": "Armstrong",
+    "age": 19,
+    "gender": "female",
+    "registered": "2015-05-01T09:36:46 -02:00",
+    "tags": [
+      "velit",
+      "Lorem",
+      "proident"
+    ],
+    "favoriteFruit": "apple"
+  },
+  {
+    "first_name": "Richard",
+    "last_name": "Neal",
+    "age": 53,
+    "gender": "male",
+    "registered": "2015-04-03T12:16:33 -02:00",
+    "tags": [
+      "mollit",
+      "sit",
+      "reprehenderit"
+    ],
+    "favoriteFruit": "strawberry"
+  },
+  {
+    "first_name": "Mcclure",
+    "last_name": "Mcdonald",
+    "age": 41,
+    "gender": "male",
+    "registered": "2015-04-11T02:47:17 -02:00",
+    "tags": [
+      "fugiat",
+      "sint",
+      "laboris"
+    ],
+    "favoriteFruit": "banana"
+  },
+  {
+    "first_name": "Dionne",
+    "last_name": "Alvarado",
+    "age": 30,
+    "gender": "female",
+    "registered": "2015-04-05T06:51:07 -02:00",
+    "tags": [
+      "elit",
+      "in",
+      "sint"
+    ],
+    "favoriteFruit": "apple"
+  },
+  {
+    "first_name": "Morgan",
+    "last_name": "Best",
+    "age": 51,
+    "gender": "female",
+    "registered": "2015-09-27T01:00:34 -02:00",
+    "tags": [
+      "aute",
+      "dolore",
+      "magna"
+    ],
+    "favoriteFruit": "strawberry"
+  },
+  {
+    "first_name": "Orr",
+    "last_name": "Spears",
+    "age": 54,
+    "gender": "male",
+    "registered": "2015-10-15T01:42:44 -02:00",
+    "tags": [
+      "consequat",
+      "laborum",
+      "dolor"
+    ],
+    "favoriteFruit": "banana"
+  },
+  {
+    "first_name": "Robbins",
+    "last_name": "Morgan",
+    "age": 52,
+    "gender": "male",
+    "registered": "2015-07-29T02:53:58 -02:00",
+    "tags": [
+      "occaecat",
+      "aute",
+      "occaecat"
+    ],
+    "favoriteFruit": "apple"
+  },
+  {
+    "first_name": "Lora",
+    "last_name": "Ware",
+    "age": 37,
+    "gender": "female",
+    "registered": "2015-01-27T05:50:36 -01:00",
+    "tags": [
+      "quis",
+      "fugiat",
+      "reprehenderit"
+    ],
+    "favoriteFruit": "apple"
+  },
+  {
+    "first_name": "Verna",
+    "last_name": "Fulton",
+    "age": 56,
+    "gender": "female",
+    "registered": "2015-07-26T11:24:42 -02:00",
+    "tags": [
+      "labore",
+      "sunt",
+      "quis"
+    ],
+    "favoriteFruit": "banana"
+  },
+  {
+    "first_name": "Melody",
+    "last_name": "Merrill",
+    "age": 44,
+    "gender": "female",
+    "registered": "2015-01-07T11:37:40 -01:00",
+    "tags": [
+      "consequat",
+      "fugiat",
+      "enim"
+    ],
+    "favoriteFruit": "strawberry"
+  },
+  {
+    "first_name": "Curry",
+    "last_name": "Wilder",
+    "age": 20,
+    "gender": "male",
+    "registered": "2015-02-03T10:23:55 -01:00",
+    "tags": [
+      "sint",
+      "quis",
+      "mollit"
+    ],
+    "favoriteFruit": "apple"
+  },
+  {
+    "first_name": "Rachael",
+    "last_name": "Guzman",
+    "age": 44,
+    "gender": "female",
+    "registered": "2015-05-19T06:53:58 -02:00",
+    "tags": [
+      "exercitation",
+      "ullamco",
       "consectetur"
     ],
     "favoriteFruit": "apple"
   },
   {
-    "first_name": "Hooper",
-    "last_name": "Mclaughlin",
-    "gender": "male",
-    "registered": "2015-01-30T09:37:33 -01:00",
+    "first_name": "Jocelyn",
+    "last_name": "Baird",
+    "age": 51,
+    "gender": "female",
+    "registered": "2015-11-12T04:26:36 -01:00",
     "tags": [
-      "et",
-      "et",
-      "anim"
+      "dolore",
+      "veniam",
+      "et"
+    ],
+    "favoriteFruit": "apple"
+  },
+  {
+    "first_name": "Riley",
+    "last_name": "Santos",
+    "age": 36,
+    "gender": "male",
+    "registered": "2015-07-15T03:26:14 -02:00",
+    "tags": [
+      "ut",
+      "do",
+      "pariatur"
     ],
     "favoriteFruit": "strawberry"
   },
   {
-    "first_name": "Beverly",
-    "last_name": "Cole",
-    "gender": "female",
-    "registered": "2015-08-19T08:28:09 -02:00",
+    "first_name": "Fields",
+    "last_name": "Bryan",
+    "age": 32,
+    "gender": "male",
+    "registered": "2015-03-19T03:35:06 -01:00",
     "tags": [
-      "consectetur",
-      "velit",
-      "fugiat"
+      "ipsum",
+      "ut",
+      "aute"
     ],
     "favoriteFruit": "banana"
   },
   {
-    "first_name": "Marla",
-    "last_name": "Jacobson",
+    "first_name": "Hilda",
+    "last_name": "Mullins",
+    "age": 55,
     "gender": "female",
-    "registered": "2015-01-30T10:51:10 -01:00",
+    "registered": "2015-09-07T02:26:58 -02:00",
     "tags": [
       "amet",
-      "cillum",
+      "quis",
       "do"
     ],
-    "favoriteFruit": "apple"
+    "favoriteFruit": "strawberry"
+  },
+  {
+    "first_name": "Effie",
+    "last_name": "Castro",
+    "age": 30,
+    "gender": "female",
+    "registered": "2015-07-10T06:34:38 -02:00",
+    "tags": [
+      "minim",
+      "reprehenderit",
+      "commodo"
+    ],
+    "favoriteFruit": "banana"
   }
 ];
 
-module.exports = data;
