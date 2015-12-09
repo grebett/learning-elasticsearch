@@ -10,10 +10,9 @@ let client = new elasticsearch.Client({
 client.ping({
   requestTimeout: Infinity,
   hello: 'elasticsearch-2.1.0'
+})
+.then(function (body) {
+  console.log(body);
 }, function (error) {
-  if (error)
-    console.error('Ouch! cluster is down!');
-  else {
-    console.log('Great, it\'s working!');
-  }
+  console.error(error);
 });
