@@ -1,5 +1,7 @@
 'use strict'
 
+let data = require('./data');
+
 // new client
 let elasticsearch = require('elasticsearch');
 let client = new elasticsearch.Client({
@@ -7,12 +9,16 @@ let client = new elasticsearch.Client({
   log: 'trace' // this logger prints directly to stdout very useful infos – for more infos, see: https://www.elastic.co/guide/en/elasticsearch/client/javascript-api/current/logging.html
 });
 
-client.ping({
-  requestTimeout: Infinity,
-  hello: 'elasticsearch-2.1.0'
-})
-.then(function (body) {
-  console.log(body);
-}, function (error) {
-  console.error(error);
+client.create({
+  index: 'megacorp',
+  type: 'employee',
+  id: '1',
+  body: data
+}, (error, response) => {
+  if (error) {
+    console.error(error);
+    return ;
+  }
+
+  console.log(response);
 });
