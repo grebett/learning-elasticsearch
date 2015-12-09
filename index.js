@@ -16,17 +16,8 @@ client.search({
   index: 'megacorp',
   body: {
     query: {
-      filtered: {
-        filter: {
-          range: {
-            age: { gt: 30, lt: 42 }
-          }
-        },
-        query: {
-          match: {
-            gender: 'female'
-          }
-        }
+      match_phrase: {
+        about: 'sunt ullamco in ad'
       }
     }
   }
