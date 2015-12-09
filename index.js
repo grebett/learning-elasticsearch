@@ -9,11 +9,13 @@ let client = new elasticsearch.Client({
   log: 'trace' // this logger prints directly to stdout very useful infos – for more infos, see: https://www.elastic.co/guide/en/elasticsearch/client/javascript-api/current/logging.html
 });
 
-client.create({
+// https://www.elastic.co/guide/en/elasticsearch/client/javascript-api/current/api-reference.html#api-get
+
+client.get({
   index: 'megacorp',
   type: 'employee',
-  id: '1',
-  body: data
+  // fields: ['first_name', 'last_name'],
+  id: 1 // mandatory
 }, (error, response) => {
   if (error) {
     console.error(error);
