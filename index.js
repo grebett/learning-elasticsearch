@@ -9,12 +9,18 @@ let client = new elasticsearch.Client({
   log: 'trace' // this logger prints directly to stdout very useful infos – for more infos, see: https://www.elastic.co/guide/en/elasticsearch/client/javascript-api/current/logging.html
 });
 
-// https://www.elastic.co/guide/en/elasticsearch/client/javascript-api/current/api-reference.html#api-delete
+// https://www.elastic.co/guide/en/elasticsearch/client/javascript-api/current/api-reference.html#api-update
 
-client.delete({
+client.update({
   index: 'megacorp',
   type: 'employee',
-  id: 1 // mandatory
+  id: 1,
+  body: {
+    doc: {
+      age: data.age,
+      about: data.about
+    }
+  }
 }, (error, response) => {
   if (error) {
     console.error(error);
