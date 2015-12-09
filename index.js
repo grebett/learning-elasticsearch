@@ -19,6 +19,11 @@ client.search({
       match_phrase: {
         about: 'sunt ullamco in ad'
       }
+    },
+    highlight: {
+      fields : {
+        about : {}
+      }
     }
   }
 }, (error, response) => {
@@ -26,5 +31,5 @@ client.search({
 
   let hits = response.hits;
 
-  console.log(hits.hits);
+  console.log(hits.hits[0].highlight); // highlighted values are not in _source but in highlight sibling property
 });
