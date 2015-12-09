@@ -16,8 +16,11 @@
     "url": "https://github.com/grebett/learning-elasticsearch/issues"
   },
   "homepage": "https://github.com/grebett/learning-elasticsearch#readme",
-  "devDependencies": {
+  "dependencies": {
     "elasticsearch": "^10.0.1",
     "express": "^4.13.3"
+  },
+  "devDependencies": {
+    "chalk": "^1.1.1"
   }
 }
